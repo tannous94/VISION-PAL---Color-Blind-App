@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:gravity="left|center"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+        android:innerRadius="5dp"
+        android:shape="ring"
+        android:requiresFadingEdge="vertical"
+        app:cardCornerRadius="25dp"
+        android:layout_marginLeft="10dp"
+        android:thicknessRatio="1.9">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_person_dark"
+            android:id="@+id/ImgViewProfile"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeWidth="2dp"
+            android:padding="1dp"
+            app:strokeColor="#232F34"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="username"
+            android:textColor="#232F34"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#344955"
+            android:text="comment"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

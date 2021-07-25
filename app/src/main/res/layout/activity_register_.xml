@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Register_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#232F34"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:id="@+id/tvNoRequest"
+            android:textSize="30dp"
+            android:text="User Details"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#232F34"
+            android:textStyle="bold"
+            android:text="Full Name"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/etFullName"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+        </LinearLayout>
+    <RadioGroup
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioIsGlasses">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#232F34"
+            android:textStyle="bold"
+            android:text="Do you wear glasses?"
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/radioGlassesYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:buttonTint="#F9AA33"
+            android:textColor="#344955"
+            android:checked="false"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/radioGlassesNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#344955"
+            android:buttonTint="#F9AA33"
+            android:text="No"
+            android:checked="false"
+
+            android:textSize="20dp" />
+    </RadioGroup>
+
+
+        <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGender">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#232F34"
+            android:textStyle="bold"
+            android:text="Gender: "
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:buttonTint="#F9AA33"
+            android:checked="false"
+            android:textColor="#344955"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:checked="false"
+            android:buttonTint="#F9AA33"
+            android:textColor="#344955"
+            android:textSize="20dp" />
+    </RadioGroup>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/notifySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:text="Allow Notification"
+            android:textColor="#232F34"
+            android:checked = "true"
+            android:theme="@style/SCBSwitch"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#232F34"
+            android:text="Date of Birth: "
+            android:textSize="20dp"
+            />
+        <DatePicker
+            android:layout_marginLeft="10dp"
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#232F34"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|right"
+            android:text="NEXT" />
+
+
+
+</LinearLayout>

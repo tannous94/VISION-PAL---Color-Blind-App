@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "884091201393",
+    "firebase_url": "https://imagesharing-8deb1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "imagesharing-8deb1",
+    "storage_bucket": "imagesharing-8deb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884091201393:android:53597255c6d38ba8e938d0",
+        "android_client_info": {
+          "package_name": "com.example.colorblindhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884091201393-5kdg44iir3keaht5k3bf2f7hauqr1h80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colorblindhelper",
+            "certificate_hash": "71cff63115745191685d38bbf80af8421aa43560"
+          }
+        },
+        {
+          "client_id": "884091201393-onlmtoapr1efinpjvpja2pgsu5pkfkoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colorblindhelper",
+            "certificate_hash": "be5da831b5b39b9cfaf0195d500f5b919777e72d"
+          }
+        },
+        {
+          "client_id": "884091201393-bakff47ue9ngkgg7mro385fi0sqdig1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHiyASMCny_qLrmSs7ThuaCPBH_JN9aSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884091201393-7q08542u63jkeshe7vsjpjc4q2id5t4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
